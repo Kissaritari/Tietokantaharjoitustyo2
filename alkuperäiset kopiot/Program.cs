@@ -1,4 +1,4 @@
-﻿namespace EhdokkaatLista
+﻿/*namespace EhdokkaatLista
 {
     internal class Program
     {
@@ -51,4 +51,4 @@
 
         }
     }
-}
+}*/

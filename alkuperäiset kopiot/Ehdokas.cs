@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,7 @@ namespace EhdokkaatLista
                     result = x.Etunimi.CompareTo(y.Etunimi);
             return result;
         }
+       
     }
 
 
@@ -46,11 +48,11 @@ namespace EhdokkaatLista
 
         public int CompareTo(Ehdokas other)
         {
-            if (this.Sukunimi == other.Sukunimi)
+            if (Puolue == other.Puolue)
             {
-                return this.Etunimi.CompareTo(other.Etunimi);
+                return Etunimi.CompareTo(other.Etunimi);
             }
-            return this.Sukunimi.CompareTo(other.Sukunimi);
+            return Sukunimi.CompareTo(other.Sukunimi);
         }
     }
 }
